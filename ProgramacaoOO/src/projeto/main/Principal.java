@@ -10,9 +10,15 @@ public class Principal {
 		aluno1.setDataMatricula("09/12/2024");
 		aluno1.setIdade(30);
 		
+		aluno1.setNota1(90);
+		aluno1.setNota2(84.8);
+		aluno1.setNota3(70.4);
+		aluno1.setNota4(90.5);
+		
 		System.out.println(aluno1.getNome());
 		System.out.println(aluno1.getDataMatricula());
 		System.out.println(aluno1.getIdade());
+		System.out.printf("Media do aluno é: "+aluno1.getMediaNota().toString().format("%.2f", aluno1.getMediaNota()));
 		
 		
 		
