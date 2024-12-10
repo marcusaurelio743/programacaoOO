@@ -64,9 +64,7 @@ public class Principal {
 		
 		
 		
-		System.out.println(aluno1.getNome());
-		System.out.println(aluno1.getDataMatricula());
-		System.out.println(aluno1.getIdade());
+		System.out.println(aluno1);
 		System.out.printf("Media do aluno é: "+aluno1.getMediaNota().toString().format("%.2f", aluno1.getMediaNota()));
 		System.out.println(aluno1.getAlunoAprovado());
 		
