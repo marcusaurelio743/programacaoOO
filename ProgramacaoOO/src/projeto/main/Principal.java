@@ -1,5 +1,6 @@
 package projeto.main;
 
+import java.util.Locale;
 import java.util.Scanner;
 
 import projeto.classes.Aluno;
@@ -7,17 +8,18 @@ import projeto.classes.Aluno;
 public class Principal {
 
 	public static void main(String[] args) {
-		
+		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("Informe o nome:");
 		String nome = sc.nextLine();
-		sc.nextLine();
+		
 		System.out.println("Informe a idade");
 		Integer idade = sc.nextInt();
-		sc.nextLine();
+		
 		System.out.println("informe a data de nascimento");
 		String dataNascimento = sc.nextLine();
+		sc.nextLine();
 		System.out.println("informe O RG");
 		String registroGeral = sc.nextLine();
 		System.out.println("informe O cpf");
@@ -33,9 +35,10 @@ public class Principal {
 		System.out.println("informe O nome da escola");
 		String nomeEscola = sc.nextLine();
 		
-		sc.nextLine();
+		
 		System.out.println("informe a nota 1 ");
 		double nota1 = sc.nextDouble();
+		sc.nextLine();
 		System.out.println("informe a nota 2 ");
 		double nota2 = sc.nextDouble();
 		System.out.println("informe a nota 3 ");
